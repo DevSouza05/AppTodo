@@ -4,6 +4,6 @@
    <button class="btn-primary"(click)="CREATE_tarefa(campoNovoItem.value)"> Adicionar Tarefa</button>
 
   <ul>
-    <li *ngFor="let tarefaDoLoop of arrayDeTarefas"><app-item></app-item></li>
+    <li *ngFor="let tarefaDoLoop of arrayDeTarefas"><app-item [tarefa]="tarefaDoLoop"></app-item></li>
   </ul>
 </div>
